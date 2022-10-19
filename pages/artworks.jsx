@@ -9,6 +9,24 @@ export default function Artworks() {
   const [email, setEmail] = useState("");
   const [code, setCode] = useState("");
 
+  const setForm = () => {
+    const options = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        code: code,
+      }),
+    };
+
+    fetch("/api/reservations", options)
+      .then((response) => response.json())
+      .catch((err) => console.error(err));
+
+    setUserPassword("");
+  };
+
   useEffect(() => {
     const options = {
       method: "GET",
