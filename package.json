@@ -9,11 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-<<<<<<< HEAD
     "mongodb": "^4.10.0",
-=======
     "express": "^4.18.2",
->>>>>>> 9eeddae523fc9274e1395d04682dd3d640a2480f
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
