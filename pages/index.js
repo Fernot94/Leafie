@@ -13,10 +13,10 @@ export default function Home() {
       </div>
       <div className="homeExpo">
         <h3>About Exposition</h3>
+        <p>Placeholder About</p>
       </div>
       <div className="homeProducts">
-        <h3>Products</h3>
-        <h4>Searchbar opcional</h4>
+        <h3>Artwork</h3>
         <CarouselSimples />
       </div>
     </div>
