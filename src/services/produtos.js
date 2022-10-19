@@ -1,13 +1,9 @@
-import { insertNewProduct, deleteProductById, getProductById } from "../data/produtos";
+import { insertNewProduct, deleteProductById, getProductById, getAllProducts } from "../data/produtos";
 
-//criar um novo produto
-async function createNewProduct(pathToImage, name, price) {
-    const product = await insertNewProduct({
-        pathToImage,
-        name,
-        price
-    })
-    return product
+//criar um novo produto e retorna seu id
+async function createNewProduct(product) {
+    const productId = await insertNewProduct(product)
+    return productId
 }
 
 //excluir produto pelo id
@@ -17,15 +13,28 @@ async function moveProductToTrashById(productId) {
 
 //mostrar produto pelo id
 async function showProductById(productId) {
-    const productOne = getProductById(productId)
+    const productOne = await getProductById(productId)
     if (productOne === undefined) {
         return "código inexistente"
     }
     return productOne
+
 }
+
+//obter todos os pordutos do sistema
+async function showAllProducts() {
+    const products = await getAllProducts()
+    if (products == undefined) {
+        return "Nenhuma reserva registrada!"
+    }
+    return products
+}
+
+
 
 export {
     createNewProduct,
     moveProductToTrashById,
-    showProductById
+    showProductById,
+    showAllProducts
 }

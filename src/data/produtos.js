@@ -13,10 +13,25 @@ async function insertNewProduct(product) {
 //deleta um produto pelo seu id
 async function deleteProductById(productId) {
     const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)
-    return await collection.delete({ _id: new ObjectId(productId) })
+    return await collection.deleteOne({ _id: new ObjectId(productId) })
 }
+
+//obter produto pelo id
+async function getProductById(productId) {
+    const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)
+    return await collection.findOne({ _id: new ObjectId(productId) })
+}
+
+//mostra todas as produtos armazenados no sistema
+async function getAllProducts() {
+    const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)
+    return await collection.find().toArray()
+}
+
 
 export {
     insertNewProduct,
-    deleteProductById
+    deleteProductById,
+    getProductById,
+    getAllProducts
 }
