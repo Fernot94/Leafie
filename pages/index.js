@@ -19,7 +19,7 @@ export default function Home() {
       </div>
       <br />
       <div className="mainPartners">
-        <h3>Our Partners</h3>
+        <h3>Partners</h3>
         <img src="/partners/partners.png" />
       </div>
     </div>
