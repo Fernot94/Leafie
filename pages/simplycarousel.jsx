@@ -58,63 +58,129 @@ function CarouselSimples() {
         {/* here you can also pass any other element attributes. Also, you can use your custom components as slides */}
         <div
           className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/1.png")` }}
+          style={{ width: 300, height: 300, background: `url("/img/1.png")` }}
         >
-          slide 0
+          <p>Barrel Chair</p>
         </div>
         <div
           className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/2.png")` }}
+          style={{ width: 300, height: 300, background: `url("/img/2.png")` }}
         >
-          slide 1
+          <p>Cap Lamp</p>
         </div>
         <div
           className="carouselImage"
-          style={{ width: 300, height: 300, background: "#000000" }}
+          style={{ width: 300, height: 300, background: `url("/img/3.png")` }}
         >
-          slide 2
+          <p>Tennis Seat</p>
         </div>
         <div
           className="carouselImage"
-          style={{ width: 300, height: 300, background: "#133337" }}
+          style={{ width: 300, height: 300, background: `url("/img/4.png")` }}
         >
-          slide 3
+          <p>Vinyl Seat</p>
         </div>
         <div
           className="carouselImage"
-          style={{ width: 300, height: 300, background: "#ffc0cb" }}
+          style={{ width: 300, height: 300, background: `url("/img/5.png")` }}
         >
-          slide 4
+          <p>Canned Booth</p>
         </div>
         <div
           className="carouselImage"
-          style={{ width: 300, height: 300, background: "#ffffff" }}
+          style={{ width: 300, height: 300, background: `url("/img/6.png")` }}
         >
-          slide 5
+          <p>Cardboard Couch</p>
         </div>
         <div
           className="carouselImage"
-          style={{ width: 300, height: 300, background: "#ffe4e1" }}
+          style={{ width: 300, height: 300, background: `url("/img/7.png")` }}
         >
-          slide 6
+          <p>Bottled Table</p>
         </div>
         <div
           className="carouselImage"
-          style={{ width: 300, height: 300, background: "#008080" }}
+          style={{ width: 300, height: 300, background: `url("/img/8.png")` }}
         >
-          slide 7
+          <p>Rustic Table</p>
         </div>
         <div
           className="carouselImage"
-          style={{ width: 300, height: 300, background: "#ff0000" }}
+          style={{ width: 300, height: 300, background: `url("/img/9.png")` }}
         >
-          slide 8
+          <p>Farm Chair</p>
         </div>
         <div
           className="carouselImage"
-          style={{ width: 300, height: 300, background: "#e6e6fa" }}
+          style={{ width: 300, height: 300, background: `url("/img/10.png")` }}
         >
-          slide 9
+          <p>Great Lamp</p>
+        </div>
+        <div
+          className="carouselImage"
+          style={{ width: 300, height: 300, background: `url("/img/11.png")` }}
+        >
+          <p>Capped Basket</p>
+        </div>
+        <div
+          className="carouselImage"
+          style={{ width: 300, height: 300, background: `url("/img/12.png")` }}
+        >
+          <p>Canned Mirror</p>
+        </div>
+        <div
+          className="carouselImage"
+          style={{ width: 300, height: 300, background: `url("/img/13.png")` }}
+        >
+          <p>Canned Cup</p>
+        </div>
+        <div
+          className="carouselImage"
+          style={{ width: 300, height: 300, background: `url("/img/14.png")` }}
+        >
+          <p>Barrel Cradle</p>
+        </div>
+        <div
+          className="carouselImage"
+          style={{ width: 300, height: 300, background: `url("/img/15.png")` }}
+        >
+          <p>Booked Seat</p>
+        </div>
+        <div
+          className="carouselImage"
+          style={{ width: 300, height: 300, background: `url("/img/16.png")` }}
+        >
+          <p>Creative Chairs & Table</p>
+        </div>
+        <div
+          className="carouselImage"
+          style={{ width: 300, height: 300, background: `url("/img/17.png")` }}
+        >
+          <p>Pallet Couch</p>
+        </div>
+        <div
+          className="carouselImage"
+          style={{ width: 300, height: 300, background: `url("/img/18.png")` }}
+        >
+          <p>Tubed Table</p>
+        </div>
+        <div
+          className="carouselImage"
+          style={{ width: 300, height: 300, background: `url("/img/19.png")` }}
+        >
+          <p>Canned Ceiling Lamp</p>
+        </div>
+        <div
+          className="carouselImage"
+          style={{ width: 300, height: 300, background: `url("/img/20.png")` }}
+        >
+          <p>Capped Mirror</p>
+        </div>
+        <div
+          className="carouselImage"
+          style={{ width: 300, height: 300, background: `url("/img/21.png")` }}
+        >
+          <p>Pallet Bed</p>
         </div>
       </ReactSimplyCarousel>
     </div>
