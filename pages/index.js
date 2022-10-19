@@ -11,7 +11,7 @@ export default function Home() {
         <img src="/logo/logo.png" />
       </div>
       <div className="homeExpo">
-        <h3>About Exposition</h3>
+        <h3>About the Exhibit</h3>
         <p>Placeholder About</p>
       </div>
       <div className="homeProducts">
