@@ -6,9 +6,14 @@ export default function Navbar() {
   return (
     <div className="navMain">
       <div className="navTabs">
-        <Link href="/home">
+        <Link href="/">
           <a>
-            <button disabled={router.asPath === "/home"}>Home</button>
+            <button disabled={router.asPath === "/"}>Home</button>
+          </a>
+        </Link>
+        <Link href="/about">
+          <a>
+            <button disabled={router.asPath === "/about"}>About Me</button>
           </a>
         </Link>
       </div>
