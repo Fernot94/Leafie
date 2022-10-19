@@ -15,7 +15,6 @@ export default function Home() {
         <p>Placeholder About</p>
       </div>
       <div className="homeProducts">
-        <h3>Artwork</h3>
         <CarouselSimples />
       </div>
     </div>

@@ -206,20 +206,22 @@ export default function Artworks() {
           All you have to do is fill this small form!
         </h2>
         <form className="makeReservation">
-          <p>Name:</p>
           <input
+            placeholder="Name"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
-          <p>Email:</p>
+          <br />
           <input
+            placeholder="Email"
             type="text"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <p>Code:</p>
+          <br />
           <input
+            placeholder="Art Code"
             type="text"
             value={code}
             onChange={(e) => setCode(e.target.value)}
