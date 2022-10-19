@@ -17,6 +17,11 @@ export default function Home() {
       <div className="homeProducts">
         <CarouselSimples />
       </div>
+      <br />
+      <div className="mainPartners">
+        <h3>Our Partners</h3>
+        <img src="/partners/partners.png" />
+      </div>
     </div>
   );
 }
