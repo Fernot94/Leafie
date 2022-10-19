@@ -22,30 +22,26 @@ export default function Admin() {
   };
   return (
     <div>
-      {
-        /*code === "fabio"*/ true === true ? (
-          <div className="mainAdmin">
-            <h1>Admin Page</h1>
-            <p>Reserved Items:</p>
-            {/* {reservations.map((item, i) => {
-              console.log("test");
-            })} */}
+      {code === "fabio" ? (
+        <div className="mainAdmin">
+          <h1>Admin Page</h1>
+          <p>Reserved Items:</p>
+          {/* <p>{reservations}</p> */}
+        </div>
+      ) : (
+        <div className={styles.mainIndex}>
+          <p>Enter Artist Backoffice Code</p>
+          <div className="inputBox">
+            <input
+              type="password"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
+            <br />
+            <button onClick={handleClick}>Log In</button>
           </div>
-        ) : (
-          <div className={styles.mainIndex}>
-            <p>Enter Artist Backoffice Code</p>
-            <div className="inputBox">
-              <input
-                type="password"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-              />
-              <br />
-              <button onClick={handleClick}>Log In</button>
-            </div>
-          </div>
-        )
-      }
+        </div>
+      )}
     </div>
   );
 }
