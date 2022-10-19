@@ -203,7 +203,7 @@ export default function Artworks() {
       </div>
       <div className="reservationForm">
         <h2>
-          If you want to reserve one of these art pieces of yourself, you can!
+          If you want to reserve one of these art pieces for yourself, you can!
           All you have to do is fill this small form!
         </h2>
         <form className="makeReservation">
