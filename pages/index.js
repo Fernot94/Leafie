@@ -6,7 +6,7 @@ import CarouselSimples from "./simplycarousel";
 
 export default function Home() {
   return (
-    <div className={styles.indexMain}>
+    <div className={styles.mainIndex}>
       <div className="homeTitle">
         <h1>Leafie</h1>
       </div>
@@ -17,6 +17,10 @@ export default function Home() {
       <div className="homeProducts">
         <h3>Artwork</h3>
         <CarouselSimples />
+      </div>
+      <div className={styles.donate}>
+        <h3>Do a donation</h3>
+        <button>Donate</button>
       </div>
     </div>
   );

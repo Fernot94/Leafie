@@ -363,6 +363,9 @@
   display: flex;
 }
 
-.indexMain{
+.mainIndex{
+  text-align: center;
+}
+.donate{
   text-align: center;
 }
