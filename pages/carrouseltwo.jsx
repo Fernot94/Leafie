@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 // import styles from "../../styles/carrosel.module.css";
+// import { Roupas } from "../assets/roupas";
 
 export default function Carrosel({ data, onEscolherLook }) {
   const carrosel = useRef(null);
