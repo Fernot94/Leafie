@@ -3,8 +3,6 @@ import { useEffect } from "react";
 import styles from "../styles/Home.module.css";
 
 export default function Artworks() {
-  const [items, setItems] = useState([]);
-  const [link, setLink] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [code, setCode] = useState("");
@@ -20,8 +18,9 @@ export default function Artworks() {
       }),
     };
 
-    fetch("/api/reserve/", options)
+    fetch("/api/reserve", options)
       .then((response) => response.json())
+      .then((response) => console.log(response))
       .catch((err) => console.error(err));
 
     setName("");
@@ -226,7 +225,12 @@ export default function Artworks() {
             onChange={(e) => setCode(e.target.value)}
           />
           <br />
-          <button onClick={() => setForm()}>Submit</button>
+          <input
+            className={styles.submitButton}
+            type={"button"}
+            value={"Submit"}
+            onClick={() => setForm()}
+          />
         </form>
       </div>
     </div>
