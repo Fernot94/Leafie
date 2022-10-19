@@ -339,9 +339,16 @@
   align-items: center;
   align-content: center;
 }
+<<<<<<< HEAD
 .button {
   position: absolute;
   left: 50%;
+=======
+.button{
+  position: relative;
+  left: 27%; 
+  width: 100px;
+>>>>>>> e9aebca707fda10d1496a5abe451d38480dc0f25
 }
 .titulo {
   font-size: 20px;
