@@ -24,21 +24,10 @@ export default function Artworks() {
       .then((response) => response.json())
       .catch((err) => console.error(err));
 
-    setUserPassword("");
+    setName("");
+    setEmail("");
+    setCode("");
   };
-
-  useEffect(() => {
-    const options = {
-      method: "GET",
-    };
-
-    fetch("/api/product", options)
-      .then((response) => response.json())
-      .then((response) => console.log(response))
-      .then((response) => setItems(response))
-      .then((response) => console.log(items))
-      .catch((err) => console.error(err));
-  }, []);
 
   return (
     <div className="primeira">
@@ -213,8 +202,31 @@ export default function Artworks() {
         </div>
       </div>
       <div className="reservationForm">
+        <h2>
+          If you want to reserve one of these art pieces of yourself, you can!
+          All you have to do is fill this small form!
+        </h2>
         <form className="makeReservation">
-          <h2></h2>
+          <p>Name:</p>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
+          <p>Email:</p>
+          <input
+            type="text"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <p>Code:</p>
+          <input
+            type="text"
+            value={code}
+            onChange={(e) => setCode(e.target.value)}
+          />
+          <br />
+          <button onClick={() => setForm()}>Submit</button>
         </form>
       </div>
     </div>
