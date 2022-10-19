@@ -16,6 +16,11 @@ export default function Navbar() {
             <button disabled={router.asPath === "/about"}>About Me</button>
           </a>
         </Link>
+        <Link href="/admin">
+          <a>
+            <button disabled={router.asPath === "/admin"}>Admin</button>
+          </a>
+        </Link>
       </div>
     </div>
   );

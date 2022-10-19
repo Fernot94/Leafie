@@ -9,18 +9,25 @@ export default function Admin() {
   };
   return (
     <div>
-      <div>
-        <p>Enter Artist Backoffice Code</p>
-        <div className="inputBox">
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-          />
-          <br />
-          <button onClick={handleClick}>Log In</button>
+      {code === "fabio" ? (
+        <div className="mainAdmin">
+          <h1>Admin Page</h1>
+          <p>Reserved Items:</p>
         </div>
-      </div>
+      ) : (
+        <div>
+          <p>Enter Artist Backoffice Code</p>
+          <div className="inputBox">
+            <input
+              type="password"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
+            <br />
+            <button onClick={handleClick}>Log In</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
