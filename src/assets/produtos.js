@@ -63,7 +63,7 @@ export const products = [
     }, {
         "pathToImage": "/img/16.png",
         "name": "Chair Table Set",
-        "price": "50000€"
+        "price": "50000€npm "
     }, {
         "pathToImage": "/img/17.png",
         "name": "Balcony Set",
