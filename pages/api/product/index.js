@@ -1,32 +1,29 @@
-import { createNewProduct } from "../../../src/services/produtos";
+import { createNewProduct, showAllProducts } from "../../../src/services/produtos";
+import { checkIfProductIsReserved } from "../../../src/services/reservas";
 
-if (req.method === "POST") {
-    const { product } = req.body
-
-    if (product) {
-        const NewProduct = await createNewProduct(product)
-        res.status(200).json(NewProduct)
-    } else {
-        res.status(404).json("Não foi possível inserir um novo produto")
-    }
-}
-
-/*
- //adicionar um closet a base de dados
+export default async function handler(req, res) {
+    //cria um novo produto e retorna seu id
     if (req.method === "POST") {
+        const product = req.body
 
-        const token = req.headers["authorization"]
-        const user = await findUserByToken(token)
-
-        console.log(user)
-        const objCloset = await createCloset(user._id)
-
-        if (objCloset != undefined) {
-            res.status(200).json(objCloset)
+        if (product != undefined) {
+            const productId = await createNewProduct(product)
+            res.status(200).json(productId)
         } else {
-            res.status(404).json("Não foi possível inserir um novo closet")
+            res.status(404).json("Não foi possível inserir um novo produto!")
         }
 
-    } 
+        //obter todos os produtos
+    } else if (req.method === "GET") {
 
-*/
+        const products = await showAllProducts()
+
+
+        if (products) {
+            res.status(200).json(products)
+        } else {
+            res.status(404).json("Nenhum produto encontrado!")
+        }
+
+    }
+}
