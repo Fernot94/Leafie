@@ -1,9 +1,13 @@
 import { useState } from "react";
 import { useEffect } from "react";
+import styles from "../styles/Home.module.css";
 
 export default function Artworks() {
   const [items, setItems] = useState([]);
   const [link, setLink] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [code, setCode] = useState("");
 
   useEffect(() => {
     const options = {
@@ -19,7 +23,7 @@ export default function Artworks() {
   }, []);
 
   return (
-    <div className="mainArtworks">
+    <div className={styles.body}>
       <div className="artPieces">
         <div className="artWork">
           <h3>Sofa Brass Red</h3>
@@ -189,6 +193,11 @@ export default function Artworks() {
             Code: p4ll3tb3d
           </p>
         </div>
+      </div>
+      <div className="reservationForm">
+        <form className="makeReservation">
+          <h2></h2>
+        </form>
       </div>
     </div>
   );
