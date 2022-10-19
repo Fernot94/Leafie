@@ -362,12 +362,16 @@
 .carouselImage p {
   display: flex;
 }
+
 .body {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   padding: 5px;
   text-align: center;
   margin: 6px;
   display: flexbox;
-  justify-content: space-around;
+  justify-content: space-between;
 } 
 .mainIndex{
   text-align: center;
