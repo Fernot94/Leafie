@@ -1,11 +1,12 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import styles from "../styles/Home.module.css";
 
 export default function Navbar() {
   const router = useRouter();
   return (
-    <div className="navMain">
-      <div className="navTabs">
+    <div className={styles.menu}>
+      <div className={styles.menu}>
         <Link href="/">
           <a>
             <button disabled={router.asPath === "/"}>Home</button>

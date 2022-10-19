@@ -1,5 +1,6 @@
 .container {
   padding: 0 2rem;
+  background-color: #111;
 }
 
 .main {
@@ -340,4 +341,11 @@ grid-row: auto;
 
 .container h2{
   text-align: center;
+}
+.images{
+  width: 300px;
+  height: 300px;
+  max-width: 5000px;
+  max-height: 5000px;
+  background: none;
 }

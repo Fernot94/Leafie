@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
+import styles from "../styles/Home.module.css";
 
 export default function Important() {
   return (
@@ -36,11 +37,11 @@ export function ArtPieces() {
     <div>
       <h2>All Artworks</h2>
       <Carousel>
-        <div>
+        <div className={styles.images}>
           <img src="/1.png" alt="image1" />
           <p className="foto">Image 1</p>
         </div>
-        <div>
+        <div className={styles.images}>
           <img src="/2.png" alt="image2" />
           <p className="foto">Image 2</p>
         </div>
