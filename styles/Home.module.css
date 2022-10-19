@@ -338,7 +338,19 @@ padding-top: 70px;
 grid-row: auto;
 }
 
-
+.menu{
+  background-color: aqua;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.button{
+  position: absolute;
+  left: 50%; 
+}
+.titulo{
+  font-size: 20px;
+}
 .container h2{
   text-align: center;
 }
