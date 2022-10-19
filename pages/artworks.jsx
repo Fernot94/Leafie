@@ -20,7 +20,7 @@ export default function Artworks() {
       }),
     };
 
-    fetch("/api/reservations", options)
+    fetch("/api/reserve/", options)
       .then((response) => response.json())
       .catch((err) => console.error(err));
 
