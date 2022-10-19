@@ -1,5 +1,6 @@
 export const products = [
     {
+
         "pathToImage": "/img/1.png",
         "name": "Sofa Brass Red",
         "price": "20000€"
@@ -9,11 +10,11 @@ export const products = [
         "price": "5000€"
     }, {
         "pathToImage": "/img/3.png",
-        "name": "Poltrona Solteiro Bolinha de Tênis",
-        "price": ""
+        "name": "Armchair Single Tenis Balls",
+        "price": "1000€"
     }, {
         "pathToImage": "/img/4.png",
-        "name": "Armchair",
+        "name": "Disco Chair",
         "price": ""
     }, {
         "pathToImage": "/img/5.png",

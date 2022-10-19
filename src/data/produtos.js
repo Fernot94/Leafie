@@ -10,6 +10,11 @@ async function insertNewProduct(product) {
     return (await collection.insertOne(product)).insertedId
 }
 
+export async function insertNewProducts(products) {
+    const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)
+    return (await collection.insertMany(products))
+}
+
 //deleta um produto pelo seu id
 async function deleteProductById(productId) {
     const collection = await getMongoCollection(DB_NAME, COLLECTION_NAME)

@@ -1,9 +1,14 @@
-import { insertNewProduct, deleteProductById, getProductById, getAllProducts } from "../data/produtos";
+import { products } from "../assets/produtos";
+import { insertNewProduct, insertNewProducts, deleteProductById, getProductById, getAllProducts } from "../data/produtos";
 
 //criar um novo produto e retorna seu id
 async function createNewProduct(product) {
     const productId = await insertNewProduct(product)
     return productId
+}
+
+export async function populateProducts() {
+    await insertNewProducts(products)
 }
 
 //excluir produto pelo id
