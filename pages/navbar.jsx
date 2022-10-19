@@ -7,8 +7,8 @@ export default function Navbar() {
   return (
     <div className="mainNav">
       
-      <span className={styles.menu}>
         <button disabled className={styles.texto}>Fábio Giordano</button>
+      <span className={styles.menu}>
         <Link href="/">
           <a className={styles.titulo}>
             <button className={styles.button} disabled={router.asPath === "/"}>
