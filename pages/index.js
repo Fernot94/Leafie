@@ -18,10 +18,6 @@ export default function Home() {
         <h3>Artwork</h3>
         <CarouselSimples />
       </div>
-      <div className={styles.donate}>
-        <h3>Do a donation</h3>
-        <button>Donate</button>
-      </div>
     </div>
   );
 }
