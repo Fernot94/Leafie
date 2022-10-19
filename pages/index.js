@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import Important, { ArtPieces } from "./carrousel";
+import CarouselSimples from "./simplycarousel";
 
 export default function Home() {
   return (
@@ -12,12 +13,11 @@ export default function Home() {
       </div>
       <div className="homeExpo">
         <h3>About Exposition</h3>
+        <p>Placeholder About</p>
       </div>
       <div className="homeProducts">
-        <h3>Produtos</h3>
-        <Important />
-        <h4>Searchbar opcional</h4>
-        <ArtPieces />
+        <h3>Artwork</h3>
+        <CarouselSimples />
       </div>
     </div>
   );
