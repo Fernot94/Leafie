@@ -339,15 +339,14 @@
   justify-content: center;
 }
 
-
 .button {
   width: 100px;
   height: 30px;
   text-align: center;
-background: none;
-border: solid 1px green;
-margin: 3px;
-    align-items: center;
+  background: none;
+  border: solid 1px green;
+  margin: 3px;
+  align-items: center;
 }
 .titulo {
   text-align: left;
@@ -366,13 +365,12 @@ margin: 3px;
 .carouselImage p {
   display: flex;
 }
-.main{
+.main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
 }
-.texto{
+.texto {
   background: none;
   border: none;
   float: left;
@@ -389,10 +387,15 @@ margin: 3px;
   display: grid;
   grid-gap: 8px;
   justify-content: space-around;
-} 
-.mainIndex{
+}
+.mainIndex {
   text-align: center;
 }
-.donate{
+.donate {
+  text-align: center;
+}
+
+.footerMain {
+  margin-top: 60px;
   text-align: center;
 }
