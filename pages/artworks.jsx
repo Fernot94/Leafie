@@ -41,8 +41,8 @@ export default function Artworks() {
   }, []);
 
   return (
-    <div className={styles.body}>
-      <div className="artPieces">
+    <div className="primeira">
+      <div className={styles.body}>
         <div className="artWork">
           <h3>Sofa Brass Red</h3>
           <img src="/img/1.png" />
