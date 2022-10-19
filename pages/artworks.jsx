@@ -30,7 +30,7 @@ export default function Artworks() {
   };
 
   return (
-    <div className="primeira">
+    <div className={styles.main}>
       <div className={styles.body}>
         <div className="artWork">
           <h3>Sofa Brass Red</h3>

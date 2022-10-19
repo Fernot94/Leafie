@@ -362,7 +362,12 @@
 .carouselImage p {
   display: flex;
 }
-
+.main{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
 .body {
   flex-direction: row;
   justify-content: center;
