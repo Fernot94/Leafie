@@ -6,7 +6,7 @@ import CarouselSimples from "./simplycarousel";
 
 export default function Home() {
   return (
-    <div className={styles.indexMain}>
+    <div className="mainIndex">
       <div className="homeTitle">
         <h1>Leafie</h1>
       </div>
