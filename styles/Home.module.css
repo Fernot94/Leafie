@@ -334,23 +334,19 @@
 }
 
 .menu {
-  background-color: aqua;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  align-content: center;
 }
 
+
 .button {
-  position: absolute;
-  left: 50%;
-}
-.button {
-  position: relative;
-  left: 27%;
-  width: 100px;
+  display: flex;
+    align-items: center;
 }
 .titulo {
-  font-size: 20px;
+  text-align: left;
 }
 .container h2 {
   text-align: center;

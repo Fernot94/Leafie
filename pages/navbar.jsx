@@ -6,9 +6,11 @@ export default function Navbar() {
   const router = useRouter();
   return (
     <div>
-      <div className={styles.menu}>
+       <p className={styles.titulo}>Fábio Giordano</p>
+      <span className={styles.menu}>
+     
         <Link href="/">
-          <a className={styles.titulo}>Fábio Giordano
+          <a className={styles.titulo}>
             <button className={styles.button} disabled={router.asPath === "/"}>Home</button>
           </a>
         </Link>
@@ -22,7 +24,7 @@ export default function Navbar() {
             <button className={styles.button} disabled={router.asPath === "/admin"}>Admin</button>
           </a>
         </Link>
-      </div>
+      </span>
     </div>
   );
 }
