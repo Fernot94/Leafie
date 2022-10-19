@@ -5,7 +5,7 @@ export default function MenuSobre() {
       <img className="creatorsPic" src="" />
       <p>About Me:</p>
       <ul>
-        <li>My name is Fabio Giordano and I created my brand because I believe that the world would be a better place if everyone recycled what they don't use, so that the world would be better for the next generations. </li>
+        <li>My name is Fabio Giordano and I created my brand because I believe that we would all live better if everyone recycled what they don't use so that the world would be better for the next generations.  </li>
         <p></p>
       </ul>
     </div>
