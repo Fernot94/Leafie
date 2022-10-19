@@ -14,9 +14,7 @@ async function moveProductToTrashById(productId) {
 //mostrar produto pelo id
 async function showProductById(productId) {
     const productOne = await getProductById(productId)
-    if (productOne === undefined) {
-        return "código inexistente"
-    }
+
     return productOne
 
 }
