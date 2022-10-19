@@ -28,7 +28,7 @@ function CarouselSimples() {
 
   return (
     <div>
-      <h3>Examples of the Art you will find on this event.</h3>
+      <h3>Examples of the Art you will find in this event.</h3>
       <ReactSimplyCarousel
         activeSlideIndex={activeSlideIndex}
         onRequestChange={setActiveSlideIndex}
@@ -76,14 +76,15 @@ function CarouselSimples() {
         speed={400}
         easing="linear"
       >
-        {
-          imagesList.map((el, index) => {
-            return (
-              <div key={index} className="carouselImage" style={{ width: 300, height: 300, background: `url("${el}")` }}>
-              </div>
-            )
-          })
-        }
+        {imagesList.map((el, index) => {
+          return (
+            <div
+              key={index}
+              className="carouselImage"
+              style={{ width: 300, height: 300, background: `url("${el}")` }}
+            ></div>
+          );
+        })}
       </ReactSimplyCarousel>
     </div>
   );
