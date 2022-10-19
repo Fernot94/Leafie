@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "../styles/Home.module.css";
 
 export default function Admin() {
   const [input, setInput] = useState("");
@@ -15,7 +16,7 @@ export default function Admin() {
           <p>Reserved Items:</p>
         </div>
       ) : (
-        <div>
+        <div className={styles.mainIndex}>
           <p>Enter Artist Backoffice Code</p>
           <div className="inputBox">
             <input

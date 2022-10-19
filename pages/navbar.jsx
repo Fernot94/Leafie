@@ -6,8 +6,9 @@ export default function Navbar() {
   const router = useRouter();
   return (
     <div className="mainNav">
-      <p className={styles.titulo}>Fábio Giordano</p>
+      
       <span className={styles.menu}>
+        <button disabled className={styles.texto}>Fábio Giordano</button>
         <Link href="/">
           <a className={styles.titulo}>
             <button className={styles.button} disabled={router.asPath === "/"}>
