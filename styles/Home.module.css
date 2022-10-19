@@ -362,3 +362,7 @@
 .carouselImage p {
   display: flex;
 }
+
+.indexMain{
+  text-align: center;
+}
