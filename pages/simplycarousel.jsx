@@ -60,7 +60,7 @@ function CarouselSimples() {
           className="carouselImage"
           style={{ width: 300, height: 300, background: `url("/img/1.png")` }}
         >
-          <p>Barrel Chair</p>
+          <p style={{}}>Barrel Chair</p>
         </div>
         <div
           className="carouselImage"
