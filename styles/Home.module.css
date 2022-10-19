@@ -345,8 +345,9 @@ grid-row: auto;
   align-content: center;
 }
 .button{
-  position: absolute;
-  left: 50%; 
+  position: relative;
+  left: 27%; 
+  width: 100px;
 }
 .titulo{
   font-size: 20px;

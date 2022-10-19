@@ -9,7 +9,7 @@ export default function Navbar() {
       <div className={styles.menu}>
         <Link href="/">
           <a className={styles.titulo}>Fábio Giordano
-            <button className={styles.button} disabled={router.asPath === "/"}>Admin</button>
+            <button className={styles.button} disabled={router.asPath === "/"}>Home</button>
           </a>
         </Link>
         <Link href="/about">
@@ -19,7 +19,7 @@ export default function Navbar() {
         </Link>
         <Link href="/admin">
           <a>
-            <button className={styles.button} disabled={router.asPath === "/admin"}>Home</button>
+            <button className={styles.button} disabled={router.asPath === "/admin"}>Admin</button>
           </a>
         </Link>
       </div>
