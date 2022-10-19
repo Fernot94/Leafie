@@ -19,9 +19,7 @@ export default function Artworks() {
 
   return (
     <div className="mainArtworks">
-      <div className="artPieces">
-        <p>{items[0]._id}</p>
-      </div>
+      <div className="artPieces">{/* <p>{items._id}</p> */}</div>
     </div>
   );
 }
