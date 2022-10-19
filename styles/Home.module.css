@@ -339,15 +339,34 @@
   justify-content: center;
 }
 
-.button {
-  width: 100px;
-  height: 30px;
+.activeButton {
+  width: 200px;
+  height: 50px;
   text-align: center;
   background: none;
-  border: solid 1px green;
+  background-color: white;
+  border: solid 3px white;
+  color: #425F57;
   margin: 3px;
   align-items: center;
+  font-size: 20px;
+  border-radius: 12px;
 }
+
+.inactiveButton {
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  background: none;
+  background-color: #425F57;
+  border: solid 3px #425F57;
+  color: white;
+  margin: 3px;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 12px;
+}
+
 .titulo {
   text-align: left;
 }
@@ -398,4 +417,10 @@
 .footerMain {
   margin-top: 60px;
   text-align: center;
+}
+
+.mainNav{
+  background-color: #425F57;
+  height: 50px;
+  padding: 20px;
 }

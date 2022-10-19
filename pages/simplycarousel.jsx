@@ -3,6 +3,28 @@ import ReactSimplyCarousel from "react-simply-carousel";
 
 function CarouselSimples() {
   const [activeSlideIndex, setActiveSlideIndex] = useState(0);
+  const imagesList = [
+    "/img/1.png",
+    "/img/2.png",
+    "/img/3.png",
+    "/img/4.png",
+    "/img/5.png",
+    "/img/6.png",
+    "/img/7.png",
+    "/img/8.png",
+    "/img/10.png",
+    "/img/11.png",
+    "/img/12.png",
+    "/img/13.png",
+    "/img/14.png",
+    "/img/15.png",
+    "/img/16.png",
+    "/img/17.png",
+    "/img/18.png",
+    "/img/19.png",
+    "/img/20.png",
+    "/img/21.png",
+  ];
 
   return (
     <div>
@@ -46,98 +68,22 @@ function CarouselSimples() {
         }}
         responsiveProps={[
           {
-            itemsToShow: 2,
-            itemsToScroll: 2,
+            itemsToShow: 1,
+            itemsToScroll: 1,
             minWidth: 768,
           },
         ]}
         speed={400}
         easing="linear"
       >
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/1.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/2.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/3.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/4.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/5.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/6.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/7.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/8.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/9.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/10.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/11.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/12.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/13.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/14.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/15.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/16.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/17.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/18.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/19.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/20.png")` }}
-        ></div>
-        <div
-          className="carouselImage"
-          style={{ width: 300, height: 300, background: `url("/img/21.png")` }}
-        ></div>
+        {
+          imagesList.map((el, index) => {
+            return (
+              <div key={index} className="carouselImage" style={{ width: 300, height: 300, background: `url("${el}")` }}>
+              </div>
+            )
+          })
+        }
       </ReactSimplyCarousel>
     </div>
   );

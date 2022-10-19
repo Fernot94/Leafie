@@ -4,14 +4,17 @@ import styles from "../styles/Home.module.css";
 
 export default function Navbar() {
   const router = useRouter();
+
   return (
-    <div className="mainNav">
-      
-        <button disabled className={styles.texto}>Fábio Giordano</button>
+    <div className={styles.mainNav}>
+        <img style={{float: "left", width: "200px", marginTop: "-20px"}}  src="/logo/Logo_Fabio_Giordano_White.png" />
       <span className={styles.menu}>
         <Link href="/">
           <a className={styles.titulo}>
-            <button className={styles.button} disabled={router.asPath === "/"}>
+          <button
+              className={router.asPath === "/" ? styles.activeButton : styles.inactiveButton}
+              disabled={router.asPath === "/"}
+            >
               Home
             </button>
           </a>
@@ -19,7 +22,7 @@ export default function Navbar() {
         <Link href="/artworks">
           <a className={styles.titulo}>
             <button
-              className={styles.button}
+              className={router.asPath === "/artworks" ? styles.activeButton : styles.inactiveButton}
               disabled={router.asPath === "/artworks"}
             >
               Artwork
@@ -29,7 +32,7 @@ export default function Navbar() {
         <Link href="/about">
           <a>
             <button
-              className={styles.button}
+              className={router.asPath === "/about" ? styles.activeButton : styles.inactiveButton}
               disabled={router.asPath === "/about"}
             >
               About Me
@@ -39,7 +42,7 @@ export default function Navbar() {
         <Link href="/admin">
           <a>
             <button
-              className={styles.button}
+              className={router.asPath === "/admin" ? styles.activeButton : styles.inactiveButton}
               disabled={router.asPath === "/admin"}
             >
               Admin
