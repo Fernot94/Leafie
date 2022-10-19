@@ -16,7 +16,6 @@ export default function Home() {
       </div>
       <div className="homeProducts">
         <h3>Products</h3>
-        <CarouselSimples />
         <h4>Searchbar opcional</h4>
         <CarouselSimples />
       </div>
