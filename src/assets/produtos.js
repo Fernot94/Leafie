@@ -66,23 +66,23 @@ export const products = [
         "price": "50000€"
     }, {
         "pathToImage": "/img/17.png",
-        "name": "",
-        "price": ""
+        "name": "Balcony Set",
+        "price": "15000€"
     }, {
         "pathToImage": "/img/18.png",
-        "name": "",
-        "price": ""
+        "name": "Pipe Coffee Table",
+        "price": "8000€"
     }, {
         "pathToImage": "/img/19.png",
-        "name": "",
-        "price": ""
+        "name": "Ring Chandelier",
+        "price": "3000€"
     }, {
         "pathToImage": "/img/20.png",
-        "name": "",
-        "price": ""
+        "name": "Colorful Cap Mirror",
+        "price": "7000€"
     }, {
         "pathToImage": "/img/21.png",
-        "name": "",
-        "price": ""
+        "name": "Pallet Bed",
+        "price": "50000€"
     }
 ]
