@@ -29,14 +29,14 @@ function ResponsiveCarousel() {
   ];
 
   return (
-    <div>
+    <div className="styles.homeExpo">
       <h3>Examples of the Art you will find in this event</h3>
-      <Carousel width={"35%"} styles={{alignSelf: "center", textAlign: "center", }} >
+      <Carousel width={"35%"} styles={{ alignSelf: "center", textAlign: "center", }} >
         {imagesList.map((el, index) => {
           return (
             <div key={index}>
               <img src={el} className={styles.thumbnail} />
-          </div>
+            </div>
           );
         })}
       </Carousel>
