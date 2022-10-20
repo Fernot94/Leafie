@@ -17,9 +17,8 @@ export default async function handler(req, res) {
     //obter todas as reservas
   } else if (req.method === "GET") {
     const reserves = await showAllReserves();
-
     if (reserves) {
-      res.status(200).json({ reservations: await showAllReserves() });
+      res.status(200).json({ reservations: reserves });
     } else {
       res.status(404).json("Nenhuma reserva registrada!");
     }

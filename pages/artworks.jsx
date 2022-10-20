@@ -7,25 +7,33 @@ export default function Artworks() {
   const [email, setEmail] = useState("");
   const [code, setCode] = useState("");
 
-  const setForm = () => {
-    const options = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        code: code,
-      }),
-    };
+  const setForm = async (e) => {
+    e.preventDefault();
+    if (confirm(`Are you sure you want to reserve the artwork with code: ${code}?`) == true) {
+      
+      const answer = await fetch("/api/reserve", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          code: code,
+        }),
+      });
+        
+      console.log("answer", answer)
+      if(answer.status == 200){
+        alert(`Artwork Code ${code} reservation completed successfully!`);
+      } else {
+        alert(`Your reservation was not completed. Please contact us directly.`);
+      }
+  
+      setName("");
+      setEmail("");
+      setCode("");
+    } 
 
-    fetch("/api/reserve", options)
-      .then((response) => response.json())
-      .then((response) => console.log(response))
-      .catch((err) => console.error(err));
-
-    setName("");
-    setEmail("");
-    setCode("");
+    
   };
 
   return (
@@ -200,15 +208,17 @@ export default function Artworks() {
           </p>
         </div>
       </div>
-      <hr/>
+      
       <div className={styles.reservationForm}>
+      <hr/>
         <h2>
           If you want to reserve one of these art pieces for yourself, you can! <br/>
           All you have to do is fill this small form!
         </h2>
-        <form >
+        <form onSubmit={setForm}>
           <input
             className={styles.input}
+            required
             placeholder="Name"
             type="text"
             value={name}
@@ -217,6 +227,7 @@ export default function Artworks() {
           <br />
           <input
             className={styles.input}
+            required
             placeholder="Email"
             type="text"
             value={email}
@@ -225,6 +236,7 @@ export default function Artworks() {
           <br />
           <input
             className={styles.input}
+            required
             placeholder="Art Code"
             type="text"
             value={code}
@@ -233,9 +245,8 @@ export default function Artworks() {
           <br />
           <input
             className={styles.submitButton}
-            type={"button"}
+            type={"submit"}
             value={"Submit"}
-            onClick={() => setForm()}
           />
         </form>
       </div>
