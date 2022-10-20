@@ -9,8 +9,11 @@ export default function Artworks() {
 
   const setForm = async (e) => {
     e.preventDefault();
-    if (confirm(`Are you sure you want to reserve the artwork with code: ${code}?`) == true) {
-      
+    if (
+      confirm(
+        `Are you sure you want to reserve the artwork with code: ${code}?`
+      ) == true
+    ) {
       const answer = await fetch("/api/reserve", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -20,20 +23,20 @@ export default function Artworks() {
           code: code,
         }),
       });
-        
-      console.log("answer", answer)
-      if(answer.status == 200){
+
+      console.log("answer", answer);
+      if (answer.status == 200) {
         alert(`Artwork Code ${code} reservation completed successfully!`);
       } else {
-        alert(`Your reservation was not completed. Please contact us directly.`);
+        alert(
+          `Your reservation was not completed. Please contact us directly.`
+        );
       }
-  
+
       setName("");
       setEmail("");
       setCode("");
-    } 
-
-    
+    }
   };
 
   return (
@@ -208,11 +211,12 @@ export default function Artworks() {
           </p>
         </div>
       </div>
-      
+
       <div className={styles.reservationForm}>
-      <hr/>
+        <hr />
         <h2>
-          If you want to reserve one of these art pieces for yourself, you can! <br/>
+          If you want to reserve one of these art pieces for yourself, you can!{" "}
+          <br />
           All you have to do is fill this small form!
         </h2>
         <form onSubmit={setForm}>
@@ -229,7 +233,7 @@ export default function Artworks() {
             className={styles.input}
             required
             placeholder="Email"
-            type="text"
+            type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
