@@ -41,7 +41,12 @@ export default function Artworks() {
 
   return (
     <div className={styles.main}>
+      <div><h1>Fábio's Artworks</h1></div>
+      <div><h3>Scroll Down to Make a Reservation</h3></div>
+      <div><hr></hr></div>
+
       <div className={styles.body}>
+
         <div className={styles.artWork}>
           <h3>Sofa Brass Red</h3>
           <img src="/img/1.png" className={styles.thumbnail} />
@@ -214,11 +219,11 @@ export default function Artworks() {
 
       <div className={styles.reservationForm}>
         <hr />
-        <h2>
+        <h3>
           If you want to reserve one of these art pieces for yourself, you can!{" "}
           <br />
           All you have to do is fill this small form!
-        </h2>
+        </h3>
         <form onSubmit={setForm}>
           <input
             className={styles.input}

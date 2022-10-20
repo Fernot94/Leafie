@@ -8,7 +8,7 @@ export default function Home() {
         <img src="/logo/logo.png" />
       </div>
       <div className={styles.homeExpo}>
-        <h3>About the Exhibition</h3>
+        <h1>About the Exhibition</h1>
         <p>
           It is with this belief in mind that we decided to team up with Fábio
           Giordano, a renowned Italian artist whose passion is the search for

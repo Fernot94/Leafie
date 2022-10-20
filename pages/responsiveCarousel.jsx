@@ -30,7 +30,7 @@ function ResponsiveCarousel() {
 
   return (
     <div className="styles.homeExpo">
-      <h3>Examples of the Art you will find in this event</h3>
+      <h1>Examples of the Art you will find in this event</h1>
       <Carousel width={"35%"} styles={{ alignSelf: "center", textAlign: "center", }} >
         {imagesList.map((el, index) => {
           return (
