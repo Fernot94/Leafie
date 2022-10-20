@@ -7,7 +7,7 @@ export default function MenuSobre() {
       <h1>About Me</h1>
       <img className="creatorsPic" src="/img/homem.png" style={{width: "800px"}} />
       <ul>
-        <li>My name is Fabio Giordano and I created my brand because I believe that we would all live better if everyone recycled what they don't use so that the world would be better for the next generations.  </li>
+        <li>My name is Fabio Giordano and I created my brand because I believe that we would all live better if everyone recycled what they don't use so that the world would be better for the next generations.To achieve my goal, I have partnered with the Portuguese marine litter association, the association removes rubbish from the sea and delivers it so that it can be used by me to create unique and sustainable works of art.  </li>
         <p></p>
       </ul>
     </div>
