@@ -7,10 +7,17 @@ body {
   color: #425f57;
   font-size: 1.2em;
 }
+
 .homeTitle {
   /* opacity: 0.7; */
   height: 100%;
   left: 0;
   top: 0;
   width: 100%;
+
+}
+
+.homeTitle img {
+  width: 100vw;
+  height: 42vw;
 }
