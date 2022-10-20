@@ -7,6 +7,12 @@ export default function Admin() {
   const [reservations, setReservations] = useState([]);
   
   const handleClick = () => {
+
+    if(input !== "fabio"){
+      setInput("");
+      return;
+    }
+
     const options = {
       method: "GET",
       headers: { "Content-Type": "application/json" },
@@ -27,7 +33,8 @@ export default function Admin() {
         <div className={styles.mainIndex}>
           <h1>Admin Page</h1>
           <p>Reserved Items:</p>
-          <div className={styles.reservationList} style={{padding: "10px"}}>{reservations ? reservations.map((el, index) => {
+          <div className={styles.reservationList} style={{padding: "10px"}}>
+          {reservations ? reservations.map((el, index) => {
           return (
             <div className={styles.reservationBox} key={index}>
               Reserved by: <br />
