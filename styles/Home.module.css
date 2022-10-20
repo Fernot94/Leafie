@@ -477,7 +477,7 @@
 
 .mainAbout{
   margin: auto;
-  width: 50%;
+  width: 40%;
   padding: 10px;
 }
 
@@ -498,4 +498,9 @@
   padding:20px;
   justify-content: center;
 
+}
+
+.homeExpo {
+  margin: auto;
+  width: 70%;
 }

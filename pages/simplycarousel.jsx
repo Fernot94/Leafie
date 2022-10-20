@@ -28,7 +28,7 @@ function CarouselSimples() {
 
   return (
     <div>
-      <h3>Examples of the Art you will find in this event.</h3>
+      <h3>Examples of the Art you will find in this event</h3>
       <ReactSimplyCarousel
         activeSlideIndex={activeSlideIndex}
         onRequestChange={setActiveSlideIndex}
